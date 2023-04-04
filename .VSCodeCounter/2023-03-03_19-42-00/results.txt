@@ -1,0 +1,204 @@
+Date : 2023-03-03 19:42:00
+Directory : c:\Users\mat_f\Documents\Projet2\LOG2990-302
+Total : 135 files,  45475 codes, 498 comments, 971 blanks, all 46944 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |         14 |     40,200 |         96 |          9 |     40,305 |
+| TypeScript         |         80 |      3,294 |        292 |        563 |      4,149 |
+| SCSS               |         14 |        770 |         16 |        115 |        901 |
+| HTML               |         14 |        374 |          1 |         25 |        400 |
+| JSON with Comments |          6 |        313 |         80 |          3 |        396 |
+| Markdown           |          3 |        278 |          0 |        226 |        504 |
+| YAML               |          2 |        203 |          7 |         28 |        238 |
+| JavaScript         |          1 |         41 |          6 |          2 |         49 |
+| Ignore             |          1 |          2 |          0 |          0 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                             | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                |        135 |     45,475 |        498 |        971 |     46,944 |
+| . (Files)                                                                                                                        |          8 |        696 |         70 |        252 |      1,018 |
+| client                                                                                                                           |         88 |     29,329 |        199 |        529 |     30,057 |
+| client (Files)                                                                                                                   |          8 |     26,013 |         20 |          8 |     26,041 |
+| client\src                                                                                                                       |         80 |      3,316 |        179 |        521 |      4,016 |
+| client\src (Files)                                                                                                               |          6 |        129 |         76 |         27 |        232 |
+| client\src\app                                                                                                                   |         72 |      3,179 |         92 |        490 |      3,761 |
+| client\src\app (Files)                                                                                                           |          2 |         47 |          6 |          3 |         56 |
+| client\src\app\classes                                                                                                           |          2 |         31 |          1 |          7 |         39 |
+| client\src\app\components                                                                                                        |         28 |      1,329 |         19 |        189 |      1,537 |
+| client\src\app\components\congrats-pop-up                                                                                        |          4 |         75 |          0 |         11 |         86 |
+| client\src\app\components\game-sheet                                                                                             |          4 |        309 |          5 |         40 |        354 |
+| client\src\app\components\image-upload-canvas                                                                                    |          4 |        437 |          9 |         57 |        503 |
+| client\src\app\components\play-area                                                                                              |          4 |        145 |          5 |         28 |        178 |
+| client\src\app\components\pop-up-player                                                                                          |          4 |         95 |          0 |         20 |        115 |
+| client\src\app\components\scroll-box                                                                                             |          4 |        244 |          0 |         26 |        270 |
+| client\src\app\components\waiting-room                                                                                           |          4 |         24 |          0 |          7 |         31 |
+| client\src\app\interfaces                                                                                                        |          3 |         22 |          0 |          3 |         25 |
+| client\src\app\modules                                                                                                           |          2 |         56 |         41 |          6 |        103 |
+| client\src\app\pages                                                                                                             |         24 |      1,154 |         13 |        172 |      1,339 |
+| client\src\app\pages\app                                                                                                         |          4 |         24 |          0 |          6 |         30 |
+| client\src\app\pages\config-page                                                                                                 |          4 |        121 |          0 |         18 |        139 |
+| client\src\app\pages\creation-page                                                                                               |          4 |        489 |         10 |         83 |        582 |
+| client\src\app\pages\game-page                                                                                                   |          4 |        324 |          0 |         33 |        357 |
+| client\src\app\pages\main-page                                                                                                   |          4 |        153 |          2 |         24 |        179 |
+| client\src\app\pages\selection-page                                                                                              |          4 |         43 |          1 |          8 |         52 |
+| client\src\app\services                                                                                                          |         11 |        540 |         12 |        110 |        662 |
+| client\src\environments                                                                                                          |          2 |          8 |         11 |          4 |         23 |
+| common                                                                                                                           |          2 |         10 |          0 |          5 |         15 |
+| server                                                                                                                           |         37 |     15,440 |        229 |        185 |     15,854 |
+| server (Files)                                                                                                                   |          9 |     14,320 |         94 |          5 |     14,419 |
+| server\app                                                                                                                       |         27 |      1,119 |        135 |        180 |      1,434 |
+| server\app (Files)                                                                                                               |          5 |        112 |         64 |         20 |        196 |
+| server\app\classes                                                                                                               |          8 |        367 |          5 |         51 |        423 |
+| server\app\controllers                                                                                                           |          4 |        199 |         17 |         31 |        247 |
+| server\app\interfaces                                                                                                            |          4 |         42 |          0 |          5 |         47 |
+| server\app\services                                                                                                              |          6 |        399 |         49 |         73 |        521 |
+| server\data                                                                                                                      |          1 |          1 |          0 |          0 |          1 |
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                                         | language           | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\.eslintrc.json                                                                      | JSON with Comments |        204 |         63 |          0 |        267 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\.gitlab-ci.yml                                                                      | YAML               |        198 |          7 |         27 |        232 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\.prettierignore                                                                     | Ignore             |          2 |          0 |          0 |          2 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\.prettierrc.yaml                                                                    | YAML               |          5 |          0 |          1 |          6 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\DEPLOYMENT.md                                                                       | Markdown           |        161 |          0 |        119 |        280 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\README.md                                                                           | Markdown           |        111 |          0 |        103 |        214 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\.eslintrc.json                                                               | JSON with Comments |         38 |          0 |          1 |         39 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\angular.json                                                                 | JSON               |        124 |          0 |          1 |        125 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\karma.conf.js                                                                | JavaScript         |         41 |          6 |          2 |         49 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\package-lock.json                                                            | JSON               |     25,699 |          0 |          1 |     25,700 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\package.json                                                                 | JSON               |         66 |          0 |          1 |         67 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\app.module.ts                                                        | TypeScript         |         43 |          6 |          2 |         51 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\classes\canvas-test-helper.spec.ts                                   | TypeScript         |         19 |          1 |          5 |         25 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\classes\canvas-test-helper.ts                                        | TypeScript         |         12 |          0 |          2 |         14 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\congrats-pop-up\congrats-pop-up.component.html            | HTML               |          4 |          0 |          0 |          4 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\congrats-pop-up\congrats-pop-up.component.scss            | SCSS               |         22 |          0 |          2 |         24 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\congrats-pop-up\congrats-pop-up.component.spec.ts         | TypeScript         |         34 |          0 |          6 |         40 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\congrats-pop-up\congrats-pop-up.component.ts              | TypeScript         |         15 |          0 |          3 |         18 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\game-sheet\game-sheet.component.html                      | HTML               |         39 |          0 |          1 |         40 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\game-sheet\game-sheet.component.scss                      | SCSS               |        120 |          4 |         20 |        144 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\game-sheet\game-sheet.component.spec.ts                   | TypeScript         |         75 |          0 |         10 |         85 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\game-sheet\game-sheet.component.ts                        | TypeScript         |         75 |          1 |          9 |         85 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\image-upload-canvas\image-upload-canvas.component.html    | HTML               |         70 |          0 |          2 |         72 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\image-upload-canvas\image-upload-canvas.component.scss    | SCSS               |        120 |          0 |         10 |        130 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\image-upload-canvas\image-upload-canvas.component.spec.ts | TypeScript         |         48 |          0 |         10 |         58 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\image-upload-canvas\image-upload-canvas.component.ts      | TypeScript         |        199 |          9 |         35 |        243 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\play-area\play-area.component.html                        | HTML               |         11 |          0 |          1 |         12 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\play-area\play-area.component.scss                        | SCSS               |          5 |          0 |          0 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\play-area\play-area.component.spec.ts                     | TypeScript         |         61 |          1 |         16 |         78 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\play-area\play-area.component.ts                          | TypeScript         |         68 |          4 |         11 |         83 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\pop-up-player\pop-up-player.component.html                | HTML               |         12 |          0 |          1 |         13 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\pop-up-player\pop-up-player.component.scss                | SCSS               |          6 |          0 |          2 |          8 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\pop-up-player\pop-up-player.component.spec.ts             | TypeScript         |         45 |          0 |         12 |         57 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\pop-up-player\pop-up-player.component.ts                  | TypeScript         |         32 |          0 |          5 |         37 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\scroll-box\scroll-box.component.html                      | HTML               |         14 |          0 |          1 |         15 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\scroll-box\scroll-box.component.scss                      | SCSS               |         32 |          0 |          2 |         34 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\scroll-box\scroll-box.component.spec.ts                   | TypeScript         |        156 |          0 |         16 |        172 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\scroll-box\scroll-box.component.ts                        | TypeScript         |         42 |          0 |          7 |         49 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\waiting-room\waiting-room.component.html                  | HTML               |          4 |          0 |          1 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\waiting-room\waiting-room.component.scss                  | SCSS               |          3 |          0 |          1 |          4 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\waiting-room\waiting-room.component.spec.ts               | TypeScript         |          0 |          0 |          1 |          1 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\components\waiting-room\waiting-room.component.ts                    | TypeScript         |         17 |          0 |          4 |         21 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\const.ts                                                             | TypeScript         |          4 |          0 |          1 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\interfaces\gameData.ts                                               | TypeScript         |         14 |          0 |          1 |         15 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\interfaces\time.ts                                                   | TypeScript         |          4 |          0 |          1 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\interfaces\vec2.ts                                                   | TypeScript         |          4 |          0 |          1 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\modules\app-routing.module.ts                                        | TypeScript         |         21 |          0 |          3 |         24 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\modules\material.module.ts                                           | TypeScript         |         35 |         41 |          3 |         79 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\app\app.component.html                                         | HTML               |          1 |          0 |          0 |          1 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\app\app.component.scss                                         | SCSS               |          0 |          0 |          1 |          1 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\app\app.component.spec.ts                                      | TypeScript         |         16 |          0 |          3 |         19 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\app\app.component.ts                                           | TypeScript         |          7 |          0 |          2 |          9 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\config-page\config-page.component.html                         | HTML               |         36 |          0 |          2 |         38 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\config-page\config-page.component.scss                         | SCSS               |         58 |          0 |         10 |         68 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\config-page\config-page.component.spec.ts                      | TypeScript         |         14 |          0 |          4 |         18 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\config-page\config-page.component.ts                           | TypeScript         |         13 |          0 |          2 |         15 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\creation-page\creation-page.component.html                     | HTML               |         69 |          0 |         10 |         79 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\creation-page\creation-page.component.scss                     | SCSS               |        150 |          0 |         26 |        176 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\creation-page\creation-page.component.spec.ts                  | TypeScript         |        127 |          7 |         27 |        161 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\creation-page\creation-page.component.ts                       | TypeScript         |        143 |          3 |         20 |        166 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\game-page\game-page.component.html                             | HTML               |         63 |          0 |          3 |         66 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\game-page\game-page.component.scss                             | SCSS               |         69 |          0 |         12 |         81 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\game-page\game-page.component.spec.ts                          | TypeScript         |         93 |          0 |         11 |        104 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\game-page\game-page.component.ts                               | TypeScript         |         99 |          0 |          7 |        106 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\main-page\main-page.component.html                             | HTML               |         30 |          1 |          1 |         32 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\main-page\main-page.component.scss                             | SCSS               |         90 |          1 |         15 |        106 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\main-page\main-page.component.spec.ts                          | TypeScript         |         21 |          0 |          5 |         26 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\main-page\main-page.component.ts                               | TypeScript         |         12 |          0 |          3 |         15 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\selection-page\selection-page.component.html                   | HTML               |          5 |          0 |          1 |          6 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\selection-page\selection-page.component.scss                   | SCSS               |         11 |          1 |          1 |         13 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\selection-page\selection-page.component.spec.ts                | TypeScript         |         14 |          0 |          4 |         18 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\pages\selection-page\selection-page.component.ts                     | TypeScript         |         13 |          0 |          2 |         15 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\delete-game.service.ts                                      | TypeScript         |         27 |          0 |          4 |         31 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\draw.service.spec.ts                                        | TypeScript         |         98 |          0 |         22 |        120 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\draw.service.ts                                             | TypeScript         |        104 |          6 |         22 |        132 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\game.service.spec.ts                                        | TypeScript         |         71 |          0 |         12 |         83 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\game.service.ts                                             | TypeScript         |        108 |          3 |         20 |        131 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\player-name.service.spec.ts                                 | TypeScript         |         18 |          0 |          6 |         24 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\player-name.service.ts                                      | TypeScript         |         12 |          0 |          3 |         15 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\request-handler.service.spec.ts                             | TypeScript         |         37 |          0 |          7 |         44 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\request-handler.service.ts                                  | TypeScript         |         21 |          2 |          6 |         29 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\text-verifcation.service.spec.ts                            | TypeScript         |         31 |          0 |          7 |         38 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\app\services\text-verification.service.ts                                | TypeScript         |         13 |          1 |          1 |         15 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\environments\environment.prod.ts                                         | TypeScript         |          4 |          0 |          1 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\environments\environment.ts                                              | TypeScript         |          4 |         11 |          3 |         18 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\index.html                                                               | HTML               |         16 |          0 |          1 |         17 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\main.ts                                                                  | TypeScript         |         10 |          0 |          3 |         13 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\polyfills.ts                                                             | TypeScript         |          1 |         57 |          7 |         65 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\proxy.conf.json                                                          | JSON               |          2 |          5 |          0 |          7 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\styles.scss                                                              | SCSS               |         84 |         10 |         13 |        107 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\src\test.ts                                                                  | TypeScript         |         16 |          4 |          3 |         23 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\tsconfig.app.json                                                            | JSON               |          9 |          1 |          1 |         11 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\tsconfig.json                                                                | JSON with Comments |         27 |         12 |          0 |         39 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\client\tsconfig.spec.json                                                           | JSON               |          9 |          1 |          1 |         11 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\common\README.md                                                                    | Markdown           |          6 |          0 |          4 |         10 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\common\message.ts                                                                   | TypeScript         |          4 |          0 |          1 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\package.json                                                                        | JSON               |          8 |          0 |          1 |          9 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\.eslintrc.json                                                               | JSON with Comments |         16 |          0 |          1 |         17 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\.mocharc.json                                                                | JSON               |         12 |          0 |          1 |         13 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\app.ts                                                                   | TypeScript         |         26 |         56 |          3 |         85 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\game.spec.ts                                                     | TypeScript         |         42 |          0 |          3 |         45 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\game.ts                                                          | TypeScript         |         85 |          0 |         10 |         95 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\http.exception.spec.ts                                           | TypeScript         |         10 |          0 |          3 |         13 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\http.exception.ts                                                | TypeScript         |          7 |          0 |          2 |          9 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\socket-manager.spec.ts                                           | TypeScript         |         33 |          1 |          8 |         42 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\socket-manager.ts                                                | TypeScript         |         85 |          3 |         11 |         99 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\timer.spec.ts                                                    | TypeScript         |         60 |          1 |          9 |         70 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\classes\timer.ts                                                         | TypeScript         |         45 |          0 |          5 |         50 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\const.ts                                                                 | TypeScript         |          6 |          0 |          1 |          7 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\controllers\data.controller.spec.ts                                      | TypeScript         |        103 |          8 |         11 |        122 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\controllers\data.controller.ts                                           | TypeScript         |         36 |          3 |          6 |         45 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\controllers\difference-detect.controller.spec.ts                         | TypeScript         |         33 |          4 |          9 |         46 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\controllers\difference-detect.controller.ts                              | TypeScript         |         27 |          2 |          5 |         34 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\env.ts                                                                   | TypeScript         |          2 |          0 |          1 |          3 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\index.ts                                                                 | TypeScript         |         15 |          1 |          5 |         21 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\interfaces\client-game-data.ts                                           | TypeScript         |         13 |          0 |          1 |         14 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\interfaces\game-data.ts                                                  | TypeScript         |         15 |          0 |          1 |         16 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\interfaces\player.ts                                                     | TypeScript         |         10 |          0 |          2 |         12 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\interfaces\vec2.ts                                                       | TypeScript         |          4 |          0 |          1 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\server.ts                                                                | TypeScript         |         63 |          7 |         10 |         80 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\services\database.service.ts                                             | TypeScript         |         23 |          0 |          5 |         28 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\services\date.service.spec.ts                                            | TypeScript         |          0 |         26 |          6 |         32 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\services\difference-detect.service.spec.ts                               | TypeScript         |        161 |         15 |         33 |        209 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\services\difference-detect.service.ts                                    | TypeScript         |        117 |          4 |         12 |        133 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\services\game-data.service.spec.ts                                       | TypeScript         |         37 |          2 |          6 |         45 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\app\services\game-data.service.ts                                            | TypeScript         |         61 |          2 |         11 |         74 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\data\games.json                                                              | JSON               |          1 |          0 |          0 |          1 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\mocha-helper.ts                                                              | TypeScript         |          1 |          0 |          1 |          2 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\nodemon.json                                                                 | JSON               |         10 |          0 |          1 |         11 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\package-lock.json                                                            | JSON               |     14,225 |          0 |          1 |     14,226 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\package.json                                                                 | JSON               |         28 |         85 |          0 |        113 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\tsconfig.app.json                                                            | JSON               |          4 |          2 |          0 |          6 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\tsconfig.json                                                                | JSON with Comments |         21 |          5 |          0 |         26 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\server\tsconfig.spec.json                                                           | JSON               |          3 |          2 |          0 |          5 |
+| c:\Users\mat_f\Documents\Projet2\LOG2990-302\workspace.code-workspace                                                            | JSON with Comments |          7 |          0 |          1 |          8 |
+| Total                                                                                                                            |                    |     45,475 |        498 |        971 |     46,944 |
++----------------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

@@ -1,0 +1,60 @@
+<div class="container">
+    <section class="play-header-container yellow-background">
+        <mat-card class="yellow-background font">
+            <p>Différences trouvées :</p>
+            <p class="font-2">{{ differencesFoundPlayer + '/' + game.numberOfDifferences }}</p>
+        </mat-card>
+        <mat-card *ngIf="isMultiplayer" class="yellow-background font">
+            <p>Différences trouvées par {{ opponentName }}:</p>
+            <p class="font-2">{{ differencesFoundOpponent + '/' + game.numberOfDifferences }}</p>
+        </mat-card>
+        <mat-card class="yellow-background font">
+            <p>Temps écoulé :</p>
+            <p class="font-2">{{ time }}</p>
+        </mat-card>
+    </section>
+
+    <section class="play-area-container">
+        <div>
+            <mat-card>
+                <app-play-area class="play-area left-area" #0 tabindex="0" [imageSource]="game.originalImage" [id]="'canvas-' + 0"> </app-play-area>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card>
+                <app-play-area class="play-area right-area" #1 tabindex="0" [imageSource]="game.modifiedImage" [id]="'canvas-' + 1"> </app-play-area>
+            </mat-card>
+        </div>
+        <section class="chat-section">
+            <div class="message-section" #messageSection>
+                <ul id="roomMessageList">
+                    <li
+                        *ngFor="let mess of roomMessages"
+                        [ngClass]="{ 'player-message': mess.startsWith('[' + playerName + ']'), 'serveur-message': mess.startsWith('[Serveur]') }"
+                    >
+                        {{ mess }}
+                    </li>
+                </ul>
+            </div>
+            <div class="send-section">
+                <input id="roomMessage" [(ngModel)]="message" (keydown.enter)="formatAndSend(message)" type="text" />
+                <button class="button font" (click)="formatAndSend(message)">Envoyer</button>
+            </div>
+        </section>
+    </section>
+
+    <section class="play-footer-container">
+        <button class="button font" (click)="quitPage()">
+            Quitter
+            <mat-icon>exit_to_app</mat-icon>
+        </button>
+        <mat-card class="yellow-background font">
+            <p>Joueur :</p>
+            <p class="font-2">{{ playerName }}</p>
+        </mat-card>
+        <mat-card class="yellow-background font">
+            <p>{{ game.name }}</p>
+            <p>{{ 'Difficulté: ' + game.difficulty }}</p>
+        </mat-card>
+    </section>
+</div>

@@ -1,0 +1,203 @@
+* {
+    flex-grow: 1;
+    font-size: large;
+}
+
+button,
+.button {
+    height: auto;
+    width: auto;
+}
+
+.header > button {
+    height: 80%;
+    width: 50%;
+}
+
+.footer > button {
+    height: 80%;
+}
+
+input[type='text'] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fcd43c;
+    font-size: 200%;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.header {
+    display: grid;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.main {
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+
+.footer {
+    display: grid;
+    grid-column: 2 / 6;
+    grid-row: 6 / 7;
+    margin-bottom: 10px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    height: 100vh;
+    gap: 20px;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.6fr;
+}
+
+.radio-buttons {
+    display: flex;
+    background-color: #fc9f3c;
+    box-shadow: -3px 7px 0px #cd9c05;
+    border-radius: 10px;
+}
+
+#save-button {
+    grid-column-end: 5;
+}
+
+.radio-buttons input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-buttons label {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: -3px 7px 0px #cd9c05;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+    background-color: #fcd43c;
+    color: #ffffff;
+}
+
+.radio-buttons label:hover {
+    background-color: rgb(255, 94, 94);
+}
+
+.radio-buttons input[type='radio']:focus + label {
+    transform: translateY(-4px);
+}
+
+.radio-buttons input[type='radio']:active + label {
+    transform: translate(0px, 6px);
+    box-shadow: none;
+}
+
+.radio-buttons input[type='radio']:checked + label {
+    background-color: rgb(203, 51, 0);
+}
+
+#diffImage {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 5px solid #fcd43c;
+    box-shadow: -3px 7px 0px #cd9c05;
+    border-radius: 10px;
+    width: 480px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#diffImage p {
+    background-color: #fcd43c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#diffImage img {
+    width: 480px;
+    height: 360px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.copyButton {
+    top: 31%;
+    height: 5%;
+    width: 200%;
+    font-size: 100%;
+}
+
+#info-image {
+    font-size: small;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.toolbar {
+    float: right;
+    margin-right: 10%;
+}
+
+.twoImage {
+    position: absolute;
+    top: 68%;
+    left: 13.5%;
+    padding: 4px;
+    justify-content: center;
+}
+
+.intervert {
+    position: absolute;
+    top: 68%;
+    left: 26%;
+    padding: 8px;
+    justify-content: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 68%;
+    left: 32%;
+    padding: 8px;
+    justify-content: center;
+}
+
+.twoImage span {
+    font-size: larger;
+}
+
+.buttonDetect {
+    font-size: larger;
+}
+
+.toolbar {
+    position: relative;
+    top: 10%;
+    left: 95%;
+}

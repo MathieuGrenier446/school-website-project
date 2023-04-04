@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    gap: 1vw;
+    height: auto;
+}
+
+.image-canvas {
+    display: grid;
+    grid-template-rows: 5fr 0.5fr;
+    flex-grow: 1;
+}
+
+.canvas-container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+}
+
+.image-canvas-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    border: 5px solid #fcd43c;
+    box-shadow: -3px 7px 0px #cd9c05;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    grid-row-start: 1;
+    width: 640px;
+    height: 480px;
+}
+
+.button-container {
+    margin-top: 2%;
+    display: flex;
+    max-width: 60%;
+    height: auto;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.tool-container {
+    border: 5px solid #fcd43c;
+    box-shadow: -3px 7px 0px #cd9c05;
+    border-radius: 10px;
+    padding: 26px;
+    height: 428px;
+}
+section {
+    background: #fff;
+    border-radius: 7px;
+}
+
+ul.options {
+    margin: 0;
+    padding: 0;
+}
+
+.row .options .option {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.option:is(:hover, .active) img {
+    filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+}
+.option :where(span, label) {
+    color: #5a6168;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.option:is(:hover, .active) :where(span, label) {
+    color: #4a98f7;
+}
+.option #fill-color {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+}
+#fill-color:checked ~ label {
+    color: #4a98f7;
+}
+.option #size-slider {
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+}
+.colors .options {
+    display: flex;
+    justify-content: space-between;
+}
+.colors .option {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 3px;
+    position: relative;
+    margin-right: 2px;
+}
+.colors .option:nth-child(1) {
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+}
+.colors .option.selected::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    height: 12px;
+    width: 12px;
+    background: inherit;
+    border-radius: inherit;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+}
+.colors .option:first-child.selected::before {
+    border-color: #ccc;
+}
+.option #color-picker {
+    opacity: 0;
+    cursor: pointer;
+}

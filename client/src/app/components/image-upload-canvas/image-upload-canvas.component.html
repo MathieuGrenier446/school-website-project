@@ -1,0 +1,69 @@
+<body tabindex="-1" (keydown)="onKeyDown($event)" (keyup)="onKeyUp($event)">
+    <div class="tool-container">
+        <section class="tools-bar">
+            <div class="row">
+                <label class="title">Formes</label>
+                <ul class="options">
+                    <li class="option tool" [ngClass]="{ active: currentTool === 'rectangle' }" id="rectangle" (click)="selectTool('rectangle')">
+                        <i class="fa fa-square"></i>
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color" [(ngModel)]="isFillColorChecked" />
+                        <label for="fill-color">Remplir</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label class="title">Outils</label>
+                <ul class="options">
+                    <li class="option" [ngClass]="{ active: currentTool === 'pen' }" id="brush" (click)="selectTool('pen')">
+                        <i class="fa fa-pencil"></i>
+                        <span>Crayon</span>
+                    </li>
+                    <li class="option tool" [ngClass]="{ active: currentTool === 'eraser' }" id="eraser" (click)="selectTool('eraser')">
+                        <i class="fa fa-eraser"></i>
+                        <span>Efface</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" [(ngModel)]="currentSize" />
+                    </li>
+                </ul>
+            </div>
+            <div class="row colors">
+                <label class="title">Couleurs</label>
+                <ul class="options">
+                    <li class="option" (click)="currentColor = 'white'" [ngStyle]="{ 'background-color': 'white' }"></li>
+                    <li class="option" (click)="currentColor = 'black'" [ngStyle]="{ 'background-color': 'black' }"></li>
+                    <li class="option" (click)="currentColor = 'red'" [ngStyle]="{ 'background-color': 'red' }"></li>
+                    <li class="option" (click)="currentColor = 'blue'" [ngStyle]="{ 'background-color': 'blue' }"></li>
+                    <li class="option" [style.background-color]="currentColor">
+                        <input type="color" id="color-picker" [value]="currentColor" (change)="selectColor($event)" />
+                    </li>
+                </ul>
+                <button type="button" (click)="clearCanvas()" class="button font">Réinitialiser</button>
+                <button type="button" (click)="copyCanvas()" class="button font">Copier l'autre canvas</button>
+            </div>
+        </section>
+    </div>
+    <div class="image-canvas">
+        <div class="canvas-container">
+            <canvas #imageCanvas class="image-canvas-layer" [attr.width]="width" [attr.height]="height"></canvas>
+            <canvas
+                #drawCanvas
+                class="image-canvas-layer"
+                [attr.width]="width"
+                [attr.height]="height"
+                (mousedown)="onMouseDown($event)"
+                (mousemove)="onMouseMove($event)"
+                (mouseup)="onMouseUp()"
+            ></canvas>
+        </div>
+        <div class="button-container">
+            <button type="button" class="font" (click)="clearImage()">Réinitialiser</button>
+
+            <input type="file" [id]="id" (change)="onFileSelected($event)" #fileUpload hidden />
+            <label [for]="id" class="button font"><p>Téléverser image</p></label>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,143 @@
+.container {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 90%;
+    background-color: #f09833;
+    padding: 5%;
+    border-radius: 5%;
+    align-items: center;
+    transform: translateY(-10px);
+    &:hover {
+        background-color: #f58300;
+    }
+}
+
+.font-title {
+    font-family: 'Pangolin', 'cursive';
+    user-select: none;
+    font-size: 2em;
+}
+
+.title-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.dif-selec {
+    font-family: 'Pangolin', 'cursive';
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dif-conf {
+    font-family: 'Pangolin', 'cursive';
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.details h2 {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Pangolin', 'cursive';
+}
+
+.details p {
+    font-size: 100%;
+    text-align: center;
+}
+
+.rankings {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rankings div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container-selec {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    //align-items: center;
+    //justify-content: space-between;
+    bottom: 2%;
+    left: 50%;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    //align-items: center;
+    //justify-content: space-between;
+    bottom: 1%;
+    left: 40%;
+    width: 10%;
+}
+
+.button {
+    width: auto;
+    height: auto;
+    display: none; // hide the buttons by default
+    justify-content: center;
+}
+
+.container:hover .button {
+    display: initial; // make the button container appear
+    justify-content: center;
+}
+
+.font-button {
+    font-size: 1.5em;
+}
+
+.font-button-config {
+    font-size: 1em;
+}
+
+.solo {
+    padding-right: 30px;
+}
+
+.versus {
+    padding-left: 10px;
+}
+
+.boxWinning {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

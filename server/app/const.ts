@@ -1,0 +1,10 @@
+export const DEFAULT_IMAGE = 'assets/image/camera.png';
+export const NAME_LENGTH = 20;
+export const WIDTH_IMAGE = 640;
+export const HEIGHT_IMAGE = 480;
+export const SECONDS_PER_MINUTE = 60;
+export const MILLISECONDS_PER_SECOND = 1000;
+export const TEST_IMAGE_1 = './test-img-1.jpg';
+export const TEST_IMAGE_2 = './test-img-2.jpg';
+export const TEST_IMAGE_1_BASE_64 = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+export const TEST_IMAGE_2_BASE_64 = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';

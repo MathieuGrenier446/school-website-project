@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="title-image">
+        <h1 class="font-title">{{ game.name }}</h1>
+        <img [src]="game.originalImage" />
+    </div>
+    <div class="details font">
+        <h1 *ngIf="isSelected" class="font dif-selec">Difficulté: {{ game.difficulty }}</h1>
+        <h1 *ngIf="!isSelected" class="font dif-conf">Difficulté: {{ game.difficulty }}</h1>
+        <div class="rankings">
+            <div class="solo">
+                <h2>Solo</h2>
+                <div *ngFor="let player of game.topSoloPlayers; let i = index">
+                    <p>{{ i + 1 }}. {{ player }} {{ getTime(i, 'solo') }}</p>
+                </div>
+            </div>
+            <div class="versus">
+                <h2>Versus</h2>
+                <div *ngFor="let player of game.topVersusPlayers; let i = index">
+                    <p>{{ i + 1 }}. {{ player }} {{ getTime(i, 'versus') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-button-container">
+        <div *ngIf="isSelected" class="button-container-selec">
+            <button *ngIf="isSelected" class="button font font-button" (click)="solo()">Jouer</button>
+            <div *ngIf="game.joinable">
+                <button *ngIf="isSelected" class="button font font-button" (click)="join()">Rejoindre</button>
+            </div>
+            <div *ngIf="!game.joinable">
+                <button *ngIf="isSelected" class="button font font-button" (click)="create()">Créer</button>
+            </div>
+        </div>
+        <div *ngIf="!isSelected" class="button-container">
+            <button *ngIf="!isSelected" class="button font font-button-config" routerLink="/game">Réinitialiser</button>
+            <button *ngIf="!isSelected" class="button font font-button-config" (click)="deleteGame()">Supprimer</button>
+        </div>
+    </div>
+</div>

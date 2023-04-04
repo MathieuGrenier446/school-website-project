@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<form [formGroup]="gameCreationForm" (ngSubmit)="onSubmit()" (keydown)="onKeyDown($event)">
+    <div class="container">
+        <div id="diffImage" *ngIf="showImage">
+            <button class="closeButton" (click)="closeImage()">X</button>
+            <img src="{{ detecturl }}" />
+            <p>Nombre de différences: {{ numberOfDifferences }}</p>
+        </div>
+
+        <div class="header">
+            <button type="button" class="font" (click)="quitPage()">Retour</button>
+            <input placeholder="Entrez le titre du jeu..." type="text" formControlName="name" />
+            <br />
+            <span id="info-image">*les images doivent etre de format 640x480 BMP</span>
+        </div>
+
+        <div class="main">
+            <app-image-upload-canvas #one [id]="img[0]" (copyDrawCanvas)="onCopyCanvas(1)" (newState)="onNewState()"></app-image-upload-canvas>
+            <button type="button" class="button font copyButton" (click)="copyImage()"><span>&#8646;</span></button>
+            <app-image-upload-canvas #two [id]="img[1]" (copyDrawCanvas)="onCopyCanvas(2)" (newState)="onNewState()"></app-image-upload-canvas>
+        </div>
+
+        <input type="file" (change)="uploadTwoImages($event)" #fileUpload hidden />
+        <label class="button font uploadTwoImages" (click)="fileUpload.click()"><p>Téléverser deux fois l'image</p></label>
+        <button class="button font intervert" type="button" (click)="changeCanvas()">Intervertir</button>
+        <div class="arrow">
+            <button type="button" (click)="undoLastDrawing()"><i class="fa fa-undo"></i></button>
+            <button type="button" (click)="redoLastDrawing()"><i class="fa fa-undo fa-flip-horizontal"></i></button>
+        </div>
+        <div class="footer">
+            <div class="radio-buttons font">
+                <input
+                    type="radio"
+                    name="pixelRadius"
+                    id="0"
+                    value="0"
+                    [(ngModel)]="selectedRadio"
+                    (change)="pixelChange($event)"
+                    formControlName="pixelRadius"
+                />
+                <label for="0">0px</label>
+
+                <input
+                    type="radio"
+                    name="pixelRadius"
+                    id="3"
+                    value="3"
+                    [(ngModel)]="selectedRadio"
+                    (change)="pixelChange($event)"
+                    formControlName="pixelRadius"
+                />
+                <label for="3">3px</label>
+
+                <input
+                    type="radio"
+                    name="pixelRadius"
+                    id="9"
+                    value="9"
+                    [(ngModel)]="selectedRadio"
+                    (change)="pixelChange($event)"
+                    formControlName="pixelRadius"
+                />
+                <label for="9">9px</label>
+
+                <input
+                    type="radio"
+                    name="pixelRadius"
+                    id="15"
+                    value="15"
+                    [(ngModel)]="selectedRadio"
+                    (change)="pixelChange($event)"
+                    formControlName="pixelRadius"
+                />
+                <label for="15">15px</label>
+            </div>
+
+            <button type="button" class="font buttonDetect" (click)="detectImage(true)">Détection</button>
+
+            <button id="save-button" type="submit" class="font">Sauvegarder</button>
+        </div>
+    </div>
+</form>

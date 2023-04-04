@@ -1,0 +1,18 @@
+<div id="text">
+    <div *ngIf="data === waitingRoomView">
+        <p>En attente d'un second joueur...</p>
+        <button (click)="exit()">Annuler</button>
+    </div>
+    <div *ngIf="data === refusalView">
+        <p>Accès refusé</p>
+        <button (click)="exit()">Fermer</button>
+    </div>
+    <div *ngIf="data === gameDeletedView">
+        <p>La partie a été supprimée</p>
+        <button (click)="exit()">Fermer</button>
+    </div>
+    <div *ngIf="data === gameNotAvailable">
+        <p>La partie n'est pus disponible</p>
+        <button (click)="exit()">Fermer</button>
+    </div>
+</div>

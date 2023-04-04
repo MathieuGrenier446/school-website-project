@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'nav main'
+        'nav footer';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5%; /* gap of 16px between rows */
+    grid-column-gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+app-game-sheet {
+    width: 90%;
+    height: 90%;
+}
+.button-container {
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: 'prev next';
+}
+.button-prev {
+    grid-area: prev;
+    left: 30%;
+    position: absolute;
+}
+.button-next {
+    grid-area: next;
+    right: 30%;
+    position: absolute;
+}

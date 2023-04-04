@@ -1,0 +1,31 @@
+<div class="container justified">
+    <div class="intro">
+        <!-- <p class="font" id="title">L'aventure de l'anomalie</p> -->
+        <img src="assets/image/titrejeu.png" id="title" />
+        <img src="https://mona.net.au/media/373008/artists-eyes-10.gif" id="eye" />
+    </div>
+    <section class="justified">
+        <div class="justified">
+            <button class="button font" routerLink="/selection">Classique</button>
+            <button class="button font">Temps Limité</button>
+            <button class="button font" routerLink="/config">Configuration</button>
+        </div>
+    </section>
+</div>
+<button id="helpButton" class="button font font-help" (click)="toggleTextBox()">?</button>
+<div id="textBox" *ngIf="showTextBox">
+    <p class="font">
+        Choisir le mode de jeu voulu: <br />
+        <br />
+        - Classique: mode de jeu classique <br />
+        - Temps limité: mode de jeu avec un temps limité <br />
+        - Configuration: configurer des parties
+    </p>
+</div>
+<footer class="footer-item">
+    <h4 class="team-name font">Fanclub (Équipe 302)</h4>
+    <p class="font font-name">
+        <span>Alexandre Fournier</span>, <span>Emile Glorieux</span>, <span>Alexis LeBlanc</span>, <span>Vincent Anctil</span>,
+        <span>David Vaillant</span>, <span>Mathieu Grenier</span>
+    </p>
+</footer>

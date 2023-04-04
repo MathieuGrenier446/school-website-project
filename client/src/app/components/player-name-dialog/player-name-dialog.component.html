@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 id="title" mat-dialog-title>Nom du joueur</h1>
+    <div mat-dialog-content>
+        <mat-form-field>
+            <input id="input" matInput [(ngModel)]="playerName" />
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button class="button font" (click)="submitName()">Confirmer</button>
+        <button class="button font xButton" (click)="exit()">Annuler</button>
+    </div>
+</div>

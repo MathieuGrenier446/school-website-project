@@ -1,0 +1,105 @@
+.container {
+    min-height: 100vh;
+    height: auto;
+}
+
+.justified {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    align-items: center;
+    transform: translateY(-2px);
+}
+
+.button {
+    cursor: url('../../../assets/image/miniLoupe.png'), pointer;
+    animation: pulse 1.5s ease-in-out; // animation of pulse when loading page
+}
+
+.button:hover {
+    transform: translateY(-4px);
+}
+
+#helpButton {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    box-shadow: -3px 7px 0px #842727;
+    background-color: #fa2836;
+    color: #ffffff;
+}
+
+#helpButton:active {
+    transform: translate(0px, 6px);
+    box-shadow: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#title {
+    margin-top: 50px;
+    max-width: 800px;
+    max-height: 100%;
+    z-index: 2;
+}
+
+#eye {
+    z-index: 1;
+    transform: scale(1.3);
+    margin-top: -68px;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-name {
+    font-family: 'Pangolin', 'cursive';
+    user-select: none;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    color: #696767;
+    font-size: 200%;
+}
+
+.font-name {
+    font-size: small;
+    color: #a1a1a1;
+    margin-left: 0%;
+}
+
+.font-help {
+    font-size: 4.5em;
+}
+
+.footer-item {
+    margin-top: -65px;
+}
+
+#textBox {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    line-height: 40px;
+}

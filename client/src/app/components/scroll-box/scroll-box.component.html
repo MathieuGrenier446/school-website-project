@@ -1,0 +1,9 @@
+<div class="scrollBoxComponent">
+    <div *ngIf="displayedItems" class="grid-container">
+        <app-game-sheet *ngFor="let game of displayedItems; let i = index" [game]="game" [isSelected]="isSelected"> </app-game-sheet>
+    </div>
+    <div class="button-container">
+        <button class="button font button-next" *ngIf="nPage > 0 && currentPage < nPage - 1" (click)="nextPage()">Prochain</button>
+        <button class="button font button-prev" *ngIf="currentPage !== 0" (click)="previousPage()">Précédent</button>
+    </div>
+</div>

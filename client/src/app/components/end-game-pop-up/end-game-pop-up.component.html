@@ -1,0 +1,10 @@
+<div class="box">
+    <div class="winner" *ngIf="winner">
+        <p>Bravo vous avez remporté la partie!</p>
+        <button class="button" (click)="redirectToSelection()">Retour au menu</button>
+    </div>
+    <div class="looser" *ngIf="!winner">
+        <p>{{ winnerName }} a gagné la partie</p>
+        <button class="button" (click)="redirectToSelection()">Retour au menu</button>
+    </div>
+</div>
